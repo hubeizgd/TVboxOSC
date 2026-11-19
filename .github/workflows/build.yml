@@ -35,7 +35,7 @@ jobs:
       - name: Preserve BD-J build JDK
         run: echo "JAVA8_HOME=$JAVA_HOME" >> "$GITHUB_ENV"
       - name: Install BD-J Java build tool
-        run: sudo apt-get update && sudo apt-get install -y ant
+        run: sudo apt-get update && sudo apt-get install -y ant patchelf
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
@@ -47,7 +47,9 @@ jobs:
         with:
           python-version: '3.10'
       - name: Test release automation
-        run: python -m unittest discover -s scripts -p 'test_*.py' -v
+        run: |
+          python -m pip install requests==2.34.2
+          python -m unittest discover -s scripts -p 'test_*.py' -v
       - name: Build Debug and run unit tests
         run: |
           chmod +x gradlew
@@ -185,7 +187,7 @@ jobs:
       - name: Preserve BD-J build JDK
         run: echo "JAVA8_HOME=$JAVA_HOME" >> "$GITHUB_ENV"
       - name: Install BD-J Java build tool
-        run: sudo apt-get update && sudo apt-get install -y ant
+        run: sudo apt-get update && sudo apt-get install -y ant patchelf
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
