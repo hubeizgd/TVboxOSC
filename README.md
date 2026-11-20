@@ -38,13 +38,15 @@ https://github.com/UndCover/PyramidStore/
 
 ## 📲软件合集（软件安装）
 ### TVBox for Android
-- TVboxOSC：[下载 v3.1.1](https://gh-proxy.com/https://github.com/kukuqi666/TVboxOSC/releases/download/v3.1.1/TVboxOSC-v3.1.1.apk) · [所有版本](https://github.com/kukuqi666/TVboxOSC/releases)
+- TVboxOSC：[下载 v3.1.2](https://gh-proxy.com/https://github.com/kukuqi666/TVboxOSC/releases/download/v3.1.2/TVboxOSC-v3.1.2.apk) · [所有版本](https://github.com/kukuqi666/TVboxOSC/releases)
 
 
 ## 🎁福利18+
 - R18: [R18](https://raw.githubusercontent.com/kukuqi666/TVboxOSC/main/website/tvbox-config/R18.json)
 
 ## 𝟭. 更新记录
+
+>* **2026/11/20 TVboxOSC v3.1.2：** 补齐 kukuqi 独立运行模块，恢复 QuickJS 旧对象与命名导出接口，完善 Python 扩展及配置 JAR 引用；新增配套 MPV 模块与原生库校验，修复播放器回退及 ASS 特效字幕的模块加载，清理废弃依赖、模块生成残留与风险资源引用。内置点播保留饭太硬、王二小，沿用现有界面。
 
 >* **2026/11/19 TVboxOSC v3.1.1：** 完善 Spider 网络、下载、缓存和 QuickJS 宿主加载，增加可脱敏、查看和导出的崩溃报告；归整公共组件及依赖；合并配置发布目录、集中 JAR 并生成文件依赖索引；文档站改由 tvbox-docs 构建。
 
